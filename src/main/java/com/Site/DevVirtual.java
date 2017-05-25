@@ -8,7 +8,7 @@ public abstract class DevVirtual extends AbstractDev {
 		
 	public DevVirtual() {
 		super();
-		setRefreshInterval(100);
+		setRefreshInterval(5000);
 	}
 		
 	@Override

@@ -9,7 +9,7 @@ import com.Site.Math;;
 public class MK_8053 extends DevReal {
 
 	@Override
-	public void decode(Protocal pro) {
+	public void decode(Protocal pro){
 		byte[] recv = pro.getRecvData();
 		if(recv==null || recv.length!=8) return;
 		

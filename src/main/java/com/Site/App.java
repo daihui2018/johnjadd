@@ -20,52 +20,107 @@ public class App
 				System.out.println(field.getName());
 			}
 		} catch (ClassNotFoundException e1) {
-			// TODO Auto-generated catch block
 			e1.printStackTrace();
 		}
-		
-		//#11
-		
+
 		//System.out.println(Loader.getResource(null));
         ///dev/ttyS0 /dev/ttyS1 9600 8 S1 N
         ///dev/pts/3 /dev/pts/3       
         //********************************************Create realDevs*********************************
-        String portName1 = "/dev/pts/3";
-        String portName2 = "/dev/pts/3";
-        String portName3 = "/dev/pts/3";
-        int interval = 1000;
-        
-        DevReal wsd01 = new com.Site.Dev.Real.WSD_TH11();
-        wsd01.setId("wsd01");
-        wsd01.setName("temp 01");
-        wsd01.setChannParam(new ChannComParam(portName1, SerialPort.BAUDRATE_9600, SerialPort.PARITY_NONE, SerialPort.DATABITS_8, SerialPort.STOPBITS_1));
-        wsd01.setRefreshInterval(interval);
-        wsd01.init();     
-        
-        //DevReal mk01 = new com.Site.Dev.Real.WSD_TH11();
-        DevReal mk01 = new com.Site.Dev.Real.MK_8053();
-        mk01.setId("wsd01");
-        mk01.setName("temp 01");
-        mk01.setChannParam(new ChannComParam(portName2, SerialPort.BAUDRATE_9600, SerialPort.PARITY_NONE, SerialPort.DATABITS_8, SerialPort.STOPBITS_1));
-        mk01.setRefreshInterval(interval);
-        mk01.init();     
-        
-        DevReal wsd02 = new com.Site.Dev.Real.WSD_TH11();
-        wsd02.setId("wsd02");
-        wsd02.setName("temp 02");
-        wsd02.setChannParam(new ChannComParam(portName3, SerialPort.BAUDRATE_4800, SerialPort.PARITY_NONE, SerialPort.DATABITS_8, SerialPort.STOPBITS_1));
-        wsd02.setRefreshInterval(interval);
-        wsd02.init();    
+        String portName1 = "/dev/ttyS6";
+        String portName2 = "/dev/ttyS3";
+        String portName3 = "/dev/ttyS5";
+        int interval = 2000;
         
         ArrayList <DevReal> rdevs = new ArrayList<DevReal>();
-        rdevs.add(wsd01);
-        rdevs.add(wsd02);
-        rdevs.add(mk01);
+        DevReal dev = null;
+        Class<?> devClass = null;
+        try {
+			devClass = Class.forName("com.Site.Dev.Real.WSD_TH11");
+			dev = (DevReal)(devClass.newInstance());
+		} catch (ClassNotFoundException e1) {
+			e1.printStackTrace();
+		} catch (InstantiationException e) {
+			e.printStackTrace();
+		} catch (IllegalAccessException e) {
+			e.printStackTrace();
+		}
+        if(dev!=null) {
+	        dev.setId("wsd01");
+	        dev.setName("temp 01");
+	        dev.setChannParam(new ChannComParam(portName1, SerialPort.BAUDRATE_9600, SerialPort.PARITY_NONE, SerialPort.DATABITS_8, SerialPort.STOPBITS_1));
+	        dev.setRefreshInterval(interval);
+	        dev.init();         
+        }
+        rdevs.add(dev);
+        DevReal wsd01 = dev;
+        
+        try {
+			devClass = Class.forName("com.Site.Dev.Real.WSD_TH11");
+			dev = (DevReal)(devClass.newInstance());
+		} catch (ClassNotFoundException e1) {
+			e1.printStackTrace();
+		} catch (InstantiationException e) {
+			e.printStackTrace();
+		} catch (IllegalAccessException e) {
+			e.printStackTrace();
+		}
+        if(dev!=null) {
+	        dev.setId("wsd02");
+	        dev.setName("temp 02");
+	        dev.setChannParam(new ChannComParam(portName2, SerialPort.BAUDRATE_1200, SerialPort.PARITY_NONE, SerialPort.DATABITS_8, SerialPort.STOPBITS_1));
+	        dev.setRefreshInterval(interval);
+	        dev.init();     
+        }
+        rdevs.add(dev);
+        DevReal wsd02 =dev;
+        
+        try {
+			devClass = Class.forName("com.Site.Dev.Real.WSD_TH11");
+			dev = (DevReal)(devClass.newInstance());
+		} catch (ClassNotFoundException e1) {
+			e1.printStackTrace();
+		} catch (InstantiationException e) {
+			e.printStackTrace();
+		} catch (IllegalAccessException e) {
+			e.printStackTrace();
+		}
+
+        if(dev!=null) {
+	        dev.setId("wsd03");
+	        dev.setName("temp 03");
+	        dev.setChannParam(new ChannComParam(portName3, SerialPort.BAUDRATE_4800, SerialPort.PARITY_NONE, SerialPort.DATABITS_8, SerialPort.STOPBITS_1));
+	        dev.setRefreshInterval(interval);
+	        dev.init();    
+        }
+        rdevs.add(dev);
+        DevReal wsd03 = dev;
+        
+        try {
+			devClass = Class.forName("com.Site.Dev.Real.MK_8053");
+			dev = (DevReal)(devClass.newInstance());
+		} catch (ClassNotFoundException e1) {
+			e1.printStackTrace();
+		} catch (InstantiationException e) {
+			e.printStackTrace();
+		} catch (IllegalAccessException e) {
+			e.printStackTrace();
+		}
+
+        if(dev!=null) {
+	        dev.setId("mk01");
+	        dev.setName("mk 01");
+	        dev.setChannParam(new ChannComParam(portName2, SerialPort.BAUDRATE_9600, SerialPort.PARITY_NONE, SerialPort.DATABITS_8, SerialPort.STOPBITS_1));
+	        dev.setRefreshInterval(interval);
+	        dev.init();    
+        }
+        rdevs.add(dev);
+        DevReal mk01 = dev;
         
         //********************************************Create virtualDevs*********************************
-        WSD wsd = new WSD();
+       /* WSD wsd = new WSD();
         wsd.setId("virtual WSD");
-        wsd.setName("温湿度");
+        wsd.setName("temperature");
         wsd.init();
         wsd.getVar("temp").addChild(wsd01.getVar("temp"));
         wsd.getVar("humi").addChild(wsd01.getVar("humi1"));
@@ -95,13 +150,14 @@ public class App
         site.addChild(wsd);
         site.addChild(ls);
         site.addChild(ls1);
-        
+        */
         //***************************************************Create and run Threads
-        ChannThread vth = new ChannThread();
-        vth.addDev(site);
-        
+        //add real devs
         ArrayList<ChannThread> ths = CreateChannThreads(rdevs);
-        ths.add(vth);
+        //add virtual devs
+        /*ChannThread vth = new ChannThread();
+        vth.addDev(site);
+        ths.add(vth);*/
         for (ChannThread th : ths) {
         	Thread thread = new Thread(th);
         	thread.start();
@@ -137,12 +193,12 @@ public class App
         	if(currChann==null) {
         		currChann = ChannFactory.createChann(dev.getChannParam());
         		rightth = new ChannThread();
+        		ths.add(rightth);
         	}
         	
         	if(rightth!=null) {
         		dev.setChann(currChann);
         		rightth.addDev(dev);
-        		ths.add(rightth);
         	}        	
 		}
 		

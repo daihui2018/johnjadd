@@ -14,21 +14,24 @@ public abstract class DevReal extends AbstractDev {
 	private String dataFormat = "ASCII";
 	private String dataEnd = "cr";
 	
-	public abstract void decode(Protocal pro);
+	public abstract void decode(Protocal pro);// throws Exception;
 	
 	public abstract void createVars();
 	public abstract void createPros();
-	
-	public void init() {
-		super.init();
-		createPros();
-	}
-	public String createOrds(String id, String param) {
-		return null;
-	}	
+	public String createOrds(String id, String param){return null;};
 	public DevReal() {
 		this(null,null);	
 	}
+	
+	public void init() {
+		try {
+			logger.debug("init device: " + this.getId());
+			super.init();
+			createPros();
+		}catch(Exception e) {
+			logger.error("fail to init device: " + this.getId() + " message: " + e.getMessage());
+		}
+	}	
 	public DevReal(AbstractChann chann, AbstractChannParam channParam) {
 		super();
 		this.chann = chann;
@@ -54,13 +57,13 @@ public abstract class DevReal extends AbstractDev {
 		}
 		fill(pro);
 		
-		System.out.println("pro =" + pro);
+		System.out.println("[" + this.getId() + "] pro =" + pro);
 		
 		try {
-			logger.info("Start to decode pro: " + pro.getId());
+			logger.debug("Start to decode pro: " + pro.getId());
 			decode(pro);
 		}catch(Exception e) {
-			logger.error("fail to decode pro: " + this.getId() + "." + pro.getId() + " err: " + e.getMessage());
+			logger.error("fail to decode pro: " + this.getId() + "." + pro.getId() + " message: " + e.getMessage());
 			System.out.println(e + " in " + this.getId() + " func: decode");
 		}
 	}
@@ -77,6 +80,12 @@ public abstract class DevReal extends AbstractDev {
 		
 			commitOrd();
 		}
+		/*
+		try {
+			logger.debug("create order: " + this.getId() + " ord: " + id);
+		}catch(Exception e) {
+			logger.error("fail to create order: " + this.getId() +  "." + id + " message: " + e.getMessage());
+		}*/
 	}	
 	private void poll(Protocal pro) {
 		AbstractChann chann = getChann();
@@ -91,15 +100,15 @@ public abstract class DevReal extends AbstractDev {
 		if(chann==null) return;
 		if(pro==null) return;
 		pro.setRecvData(chann.read());
-	}	
-	private ProtocalOrd getReadyOrd() {		
+	}
+	private ProtocalOrd getReadyOrd() {
 		for(ProtocalOrd ord : ords) {
 			if(ord==null) continue;
 			ord.refreshLeftSeconds();
 			if(ord.getLeftMs()<=0) {
 				return ord;
 			}
-		}	
+		}
 		return null;
 	}
 	public void addPro(Protocal pro) {
