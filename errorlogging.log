@@ -103,3 +103,373 @@ Port name - /dev/pts/3; Method name - openPort(); Exception type - Port not foun
 2017-05-25 12:39:29 ERROR ChannCom:60 - Port name - /dev/pts/3; Method name - openPort(); Exception type - Port not found.
 2017-05-25 12:39:29 ERROR ChannCom:60 - Port name - /dev/pts/3; Method name - openPort(); Exception type - Port not found.
 2017-05-25 12:39:29 ERROR ChannCom:60 - Port name - /dev/pts/3; Method name - openPort(); Exception type - Port not found.
+2017-05-25 21:57:29 ERROR ChannCom:60 - Port name - /dev/ttyS5; Method name - openPort(); Exception type - Permission denied.
+2017-05-25 21:57:29 ERROR ChannCom:60 - Port name - /dev/ttyS3; Method name - openPort(); Exception type - Permission denied.
+2017-05-25 21:57:29 ERROR ChannCom:60 - Port name - /dev/ttyS6; Method name - openPort(); Exception type - Permission denied.
+2017-05-31 18:32:05 ERROR ChannCom:60 - Port name - /dev/ttyS6; Method name - openPort(); Exception type - Permission denied.
+2017-05-31 18:32:05 ERROR ChannCom:60 - Port name - /dev/ttyUSB2; Method name - openPort(); Exception type - Port not found.
+2017-05-31 18:32:05 ERROR ChannCom:60 - Port name - /dev/ttyS5; Method name - openPort(); Exception type - Permission denied.
+2017-05-31 18:32:05 ERROR ChannCom:60 - Port name - /dev/ttyS3; Method name - openPort(); Exception type - Permission denied.
+2017-05-31 18:32:06 ERROR DevReal:66 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-05-31 18:32:06 ERROR DevReal:66 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-05-31 18:32:07 ERROR DevReal:66 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-05-31 18:32:07 ERROR DevReal:66 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-05-31 18:32:08 ERROR DevReal:66 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-01 16:19:43 ERROR ChannCom:65 - Port name - /dev/ttyS3; Method name - openPort(); Exception type - Permission denied.
+2017-06-01 16:19:43 ERROR ChannCom:65 - Port name - /dev/ttyS6; Method name - openPort(); Exception type - Permission denied.
+2017-06-01 16:19:43 ERROR ChannCom:65 - Port name - /dev/ttyS5; Method name - openPort(); Exception type - Permission denied.
+2017-06-01 16:19:43 ERROR ChannCom:65 - Port name - /dev/ttyUSB2; Method name - openPort(); Exception type - Port not found.
+2017-06-01 16:19:44 ERROR DevReal:66 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-01 16:19:44 ERROR DevReal:66 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-01 16:19:45 ERROR DevReal:66 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-01 16:19:45 ERROR DevReal:66 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-01 16:19:46 ERROR DevReal:66 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-01 16:19:46 ERROR DevReal:66 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-01 16:29:58 ERROR ChannCom:62 - Port name - /dev/ttyS3; Method name - openPort(); Exception type - Permission denied.
+2017-06-01 16:29:58 ERROR ChannCom:62 - Port name - /dev/ttyUSB2; Method name - openPort(); Exception type - Port not found.
+2017-06-01 16:29:58 ERROR ChannCom:62 - Port name - /dev/ttyS5; Method name - openPort(); Exception type - Permission denied.
+2017-06-01 16:29:58 ERROR ChannCom:62 - Port name - /dev/ttyS6; Method name - openPort(); Exception type - Permission denied.
+2017-06-01 16:29:58 ERROR DevReal:66 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-01 16:29:58 ERROR DevReal:66 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-01 16:29:58 ERROR DevReal:66 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-01 16:29:58 ERROR DevReal:66 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-01 16:29:58 ERROR DevReal:66 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-01 16:29:58 ERROR DevReal:66 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-01 16:29:58 ERROR DevReal:66 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-01 16:29:58 ERROR DevReal:66 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-01 16:29:58 ERROR DevReal:66 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-01 16:29:58 ERROR DevReal:66 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-01 16:29:58 ERROR DevReal:66 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-01 16:29:58 ERROR DevReal:66 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-01 16:29:58 ERROR DevReal:66 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-01 16:29:58 ERROR DevReal:66 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-01 16:29:58 ERROR DevReal:66 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-01 16:29:58 ERROR DevReal:66 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-01 16:29:58 ERROR DevReal:66 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-01 16:29:58 ERROR DevReal:66 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-01 16:29:58 ERROR DevReal:66 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-01 16:29:58 ERROR DevReal:66 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-01 16:29:58 ERROR DevReal:66 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-01 16:29:58 ERROR DevReal:66 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-01 16:29:59 ERROR DevReal:66 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-01 16:29:59 ERROR DevReal:66 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-01 16:29:59 ERROR DevReal:66 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-01 16:29:59 ERROR DevReal:66 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-01 16:29:59 ERROR DevReal:66 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-01 16:29:59 ERROR DevReal:66 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-01 16:29:59 ERROR DevReal:66 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-01 16:29:59 ERROR DevReal:66 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-01 16:29:59 ERROR DevReal:66 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-01 16:29:59 ERROR DevReal:66 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-01 16:29:59 ERROR DevReal:66 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-01 16:29:59 ERROR DevReal:66 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-01 16:29:59 ERROR DevReal:66 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-01 16:29:59 ERROR DevReal:66 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-01 16:29:59 ERROR DevReal:66 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-01 16:29:59 ERROR DevReal:66 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-01 16:29:59 ERROR DevReal:66 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-01 16:29:59 ERROR DevReal:66 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-01 16:29:59 ERROR DevReal:66 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-01 16:29:59 ERROR DevReal:66 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-01 16:29:59 ERROR DevReal:66 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-01 16:29:59 ERROR DevReal:66 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-01 16:29:59 ERROR DevReal:66 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-01 16:29:59 ERROR DevReal:66 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-01 16:29:59 ERROR DevReal:66 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-01 16:29:59 ERROR DevReal:66 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-01 16:29:59 ERROR DevReal:66 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-01 16:29:59 ERROR DevReal:66 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-01 16:29:59 ERROR DevReal:66 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-01 16:29:59 ERROR DevReal:66 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-01 16:29:59 ERROR DevReal:66 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-01 16:29:59 ERROR DevReal:66 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-01 16:29:59 ERROR DevReal:66 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-01 16:29:59 ERROR DevReal:66 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-01 16:29:59 ERROR DevReal:66 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-01 16:29:59 ERROR DevReal:66 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-01 16:29:59 ERROR DevReal:66 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-01 16:29:59 ERROR DevReal:66 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-01 16:29:59 ERROR DevReal:66 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-01 16:29:59 ERROR DevReal:66 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-01 16:29:59 ERROR DevReal:66 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-01 16:29:59 ERROR DevReal:66 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-01 16:29:59 ERROR DevReal:66 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-01 16:29:59 ERROR DevReal:66 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-01 16:29:59 ERROR DevReal:66 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-01 16:29:59 ERROR DevReal:66 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-01 16:29:59 ERROR DevReal:66 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-01 16:29:59 ERROR DevReal:66 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-01 16:29:59 ERROR DevReal:66 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-01 16:29:59 ERROR DevReal:66 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-01 16:29:59 ERROR DevReal:66 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-01 16:29:59 ERROR DevReal:66 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-01 16:29:59 ERROR DevReal:66 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-01 16:29:59 ERROR DevReal:66 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-01 16:29:59 ERROR DevReal:66 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-01 16:29:59 ERROR DevReal:66 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-01 16:29:59 ERROR DevReal:66 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-01 16:29:59 ERROR DevReal:66 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-01 16:29:59 ERROR DevReal:66 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-01 16:29:59 ERROR DevReal:66 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-01 16:29:59 ERROR DevReal:66 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-01 16:29:59 ERROR DevReal:66 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-01 16:29:59 ERROR DevReal:66 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-01 16:29:59 ERROR DevReal:66 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-01 16:29:59 ERROR DevReal:66 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-01 16:29:59 ERROR DevReal:66 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-01 16:29:59 ERROR DevReal:66 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-01 16:29:59 ERROR DevReal:66 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-01 16:29:59 ERROR DevReal:66 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-01 16:29:59 ERROR DevReal:66 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-01 16:29:59 ERROR DevReal:66 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-01 16:29:59 ERROR DevReal:66 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-01 16:29:59 ERROR DevReal:66 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-01 16:29:59 ERROR DevReal:66 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-01 16:29:59 ERROR DevReal:66 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-01 16:29:59 ERROR DevReal:66 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-01 16:29:59 ERROR DevReal:66 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-01 16:29:59 ERROR DevReal:66 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-01 16:29:59 ERROR DevReal:66 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-01 16:29:59 ERROR DevReal:66 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-01 16:29:59 ERROR DevReal:66 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-01 16:29:59 ERROR DevReal:66 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-01 16:29:59 ERROR DevReal:66 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-01 16:29:59 ERROR DevReal:66 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-01 16:30:00 ERROR DevReal:66 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-01 16:30:00 ERROR DevReal:66 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-01 16:30:00 ERROR DevReal:66 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-01 16:30:00 ERROR DevReal:66 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-01 16:30:00 ERROR DevReal:66 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-01 16:30:00 ERROR DevReal:66 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-01 16:30:00 ERROR DevReal:66 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-01 16:30:00 ERROR DevReal:66 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-01 16:30:00 ERROR DevReal:66 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-01 16:30:00 ERROR DevReal:66 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-01 16:30:00 ERROR DevReal:66 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-01 16:30:00 ERROR DevReal:66 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-01 16:30:00 ERROR DevReal:66 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-01 16:30:00 ERROR DevReal:66 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-01 16:30:00 ERROR DevReal:66 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-01 16:30:00 ERROR DevReal:66 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-01 16:30:00 ERROR DevReal:66 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-01 16:30:00 ERROR DevReal:66 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-01 16:30:00 ERROR DevReal:66 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-01 16:30:00 ERROR DevReal:66 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-01 16:30:00 ERROR DevReal:66 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-01 16:30:00 ERROR DevReal:66 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-01 16:30:00 ERROR DevReal:66 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-01 16:30:00 ERROR DevReal:66 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-01 16:30:00 ERROR DevReal:66 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-01 16:30:00 ERROR DevReal:66 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-01 16:30:00 ERROR DevReal:66 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-01 16:30:00 ERROR DevReal:66 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-01 16:30:00 ERROR DevReal:66 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-01 16:30:00 ERROR DevReal:66 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-01 16:30:00 ERROR DevReal:66 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-01 16:30:00 ERROR DevReal:66 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-01 16:30:00 ERROR DevReal:66 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-01 16:30:00 ERROR DevReal:66 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-01 16:30:00 ERROR DevReal:66 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-01 16:30:00 ERROR DevReal:66 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-01 16:30:00 ERROR DevReal:66 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-01 16:30:00 ERROR DevReal:66 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-01 16:30:00 ERROR DevReal:66 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-01 16:30:00 ERROR DevReal:66 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-01 16:30:00 ERROR DevReal:66 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-01 16:30:00 ERROR DevReal:66 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-01 16:30:00 ERROR DevReal:66 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-01 16:30:00 ERROR DevReal:66 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-01 16:30:00 ERROR DevReal:66 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-01 16:30:00 ERROR DevReal:66 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-01 16:30:00 ERROR DevReal:66 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-01 16:30:00 ERROR DevReal:66 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-01 16:30:00 ERROR DevReal:66 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-01 16:30:00 ERROR DevReal:66 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-01 16:30:00 ERROR DevReal:66 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-01 16:30:00 ERROR DevReal:66 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-01 16:30:00 ERROR DevReal:66 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-01 16:30:00 ERROR DevReal:66 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-01 16:30:00 ERROR DevReal:66 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-01 16:30:00 ERROR DevReal:66 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-01 16:30:00 ERROR DevReal:66 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-01 16:30:00 ERROR DevReal:66 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-01 16:30:00 ERROR DevReal:66 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-01 16:30:00 ERROR DevReal:66 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-03 15:07:42 ERROR ChannCom:74 - Port name - /dev/ttyS3; Method name - openPort(); Exception type - Permission denied.
+2017-06-03 15:07:42 ERROR ChannCom:74 - Port name - /dev/ttyS5; Method name - openPort(); Exception type - Permission denied.
+2017-06-03 15:07:42 ERROR ChannCom:74 - Port name - /dev/ttyS6; Method name - openPort(); Exception type - Permission denied.
+2017-06-03 15:07:42 ERROR ChannCom:74 - Port name - /dev/ttyUSB2; Method name - openPort(); Exception type - Port not found.
+2017-06-03 15:07:44 ERROR DevReal:82 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-03 15:07:46 ERROR DevReal:82 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-03 15:08:04 ERROR ChannCom:74 - Port name - /dev/ttyS6; Method name - openPort(); Exception type - Permission denied.
+2017-06-03 15:08:04 ERROR ChannCom:74 - Port name - /dev/ttyUSB2; Method name - openPort(); Exception type - Port not found.
+2017-06-03 15:08:04 ERROR ChannCom:74 - Port name - /dev/ttyS3; Method name - openPort(); Exception type - Permission denied.
+2017-06-03 15:08:04 ERROR ChannCom:74 - Port name - /dev/ttyS5; Method name - openPort(); Exception type - Permission denied.
+2017-06-03 15:08:06 ERROR DevReal:82 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-03 15:08:08 ERROR DevReal:82 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-03 15:08:48 ERROR ChannCom:74 - Port name - /dev/ttyS6; Method name - openPort(); Exception type - Permission denied.
+2017-06-03 15:08:48 ERROR ChannCom:74 - Port name - /dev/ttyS3; Method name - openPort(); Exception type - Permission denied.
+2017-06-03 15:08:48 ERROR ChannCom:74 - Port name - /dev/ttyS5; Method name - openPort(); Exception type - Permission denied.
+2017-06-03 15:08:48 ERROR ChannCom:74 - Port name - /dev/ttyUSB2; Method name - openPort(); Exception type - Port not found.
+2017-06-03 15:08:50 ERROR DevReal:82 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-03 15:10:11 ERROR ChannCom:74 - Port name - /dev/ttyS6; Method name - openPort(); Exception type - Permission denied.
+2017-06-03 15:10:11 ERROR ChannCom:74 - Port name - /dev/ttyS3; Method name - openPort(); Exception type - Permission denied.
+2017-06-03 15:10:11 ERROR ChannCom:74 - Port name - /dev/ttyS5; Method name - openPort(); Exception type - Permission denied.
+2017-06-03 15:10:11 ERROR ChannCom:74 - Port name - /dev/ttyUSB2; Method name - openPort(); Exception type - Port not found.
+2017-06-03 15:10:13 ERROR DevReal:82 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-03 15:19:03 ERROR ChannCom:74 - Port name - /dev/ttyS5; Method name - openPort(); Exception type - Permission denied.
+2017-06-03 15:19:03 ERROR ChannCom:74 - Port name - /dev/ttyUSB2; Method name - openPort(); Exception type - Port not found.
+2017-06-03 15:19:03 ERROR ChannCom:74 - Port name - /dev/ttyS3; Method name - openPort(); Exception type - Permission denied.
+2017-06-03 15:19:03 ERROR ChannCom:74 - Port name - /dev/ttyS6; Method name - openPort(); Exception type - Permission denied.
+2017-06-03 15:19:05 ERROR DevReal:82 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-03 15:19:07 ERROR DevReal:82 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-03 15:20:04 ERROR ChannCom:74 - Port name - /dev/ttyS3; Method name - openPort(); Exception type - Permission denied.
+2017-06-03 15:20:04 ERROR ChannCom:74 - Port name - /dev/ttyUSB2; Method name - openPort(); Exception type - Port not found.
+2017-06-03 15:20:04 ERROR ChannCom:74 - Port name - /dev/ttyS5; Method name - openPort(); Exception type - Permission denied.
+2017-06-03 15:20:04 ERROR ChannCom:74 - Port name - /dev/ttyS6; Method name - openPort(); Exception type - Permission denied.
+2017-06-03 15:20:06 ERROR DevReal:82 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-03 15:22:37 ERROR ChannCom:74 - Port name - /dev/ttyS6; Method name - openPort(); Exception type - Permission denied.
+2017-06-03 15:22:37 ERROR ChannCom:74 - Port name - /dev/ttyS5; Method name - openPort(); Exception type - Permission denied.
+2017-06-03 15:22:37 ERROR ChannCom:74 - Port name - /dev/ttyS3; Method name - openPort(); Exception type - Permission denied.
+2017-06-03 15:22:37 ERROR ChannCom:74 - Port name - /dev/ttyUSB2; Method name - openPort(); Exception type - Port not found.
+2017-06-03 15:22:39 ERROR DevReal:82 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-03 15:24:09 ERROR ChannCom:74 - Port name - /dev/ttyS6; Method name - openPort(); Exception type - Permission denied.
+2017-06-03 15:24:09 ERROR ChannCom:74 - Port name - /dev/ttyUSB2; Method name - openPort(); Exception type - Port not found.
+2017-06-03 15:24:09 ERROR ChannCom:74 - Port name - /dev/ttyS5; Method name - openPort(); Exception type - Permission denied.
+2017-06-03 15:24:09 ERROR ChannCom:74 - Port name - /dev/ttyS3; Method name - openPort(); Exception type - Permission denied.
+2017-06-03 15:24:11 ERROR DevReal:82 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-03 15:24:13 ERROR DevReal:82 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-04 11:38:55 ERROR ChannCom:74 - Port name - /dev/ttyS6; Method name - openPort(); Exception type - Permission denied.
+2017-06-04 11:38:55 ERROR ChannCom:74 - Port name - /dev/ttyUSB2; Method name - openPort(); Exception type - Port not found.
+2017-06-04 11:38:55 ERROR ChannCom:74 - Port name - /dev/ttyS5; Method name - openPort(); Exception type - Permission denied.
+2017-06-04 11:38:55 ERROR ChannCom:74 - Port name - /dev/ttyS3; Method name - openPort(); Exception type - Permission denied.
+2017-06-04 11:38:57 ERROR DevReal:82 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-04 11:40:50 ERROR ChannCom:74 - Port name - /dev/ttyS5; Method name - openPort(); Exception type - Permission denied.
+2017-06-04 11:40:50 ERROR ChannCom:74 - Port name - /dev/ttyS3; Method name - openPort(); Exception type - Permission denied.
+2017-06-04 11:40:50 ERROR ChannCom:74 - Port name - /dev/ttyS6; Method name - openPort(); Exception type - Permission denied.
+2017-06-04 11:40:50 ERROR ChannCom:74 - Port name - /dev/ttyUSB2; Method name - openPort(); Exception type - Port not found.
+2017-06-04 11:40:52 ERROR DevReal:82 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-04 11:41:47 ERROR ChannCom:74 - Port name - /dev/ttyS3; Method name - openPort(); Exception type - Permission denied.
+2017-06-04 11:41:47 ERROR ChannCom:74 - Port name - /dev/ttyUSB2; Method name - openPort(); Exception type - Port not found.
+2017-06-04 11:41:47 ERROR ChannCom:74 - Port name - /dev/ttyS5; Method name - openPort(); Exception type - Permission denied.
+2017-06-04 11:41:47 ERROR ChannCom:74 - Port name - /dev/ttyS6; Method name - openPort(); Exception type - Permission denied.
+2017-06-04 11:41:49 ERROR DevReal:82 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-04 11:49:29 ERROR ChannCom:74 - Port name - /dev/ttyS5; Method name - openPort(); Exception type - Permission denied.
+2017-06-04 11:49:29 ERROR ChannCom:74 - Port name - /dev/ttyS6; Method name - openPort(); Exception type - Permission denied.
+2017-06-04 11:49:29 ERROR ChannCom:74 - Port name - /dev/ttyUSB2; Method name - openPort(); Exception type - Port not found.
+2017-06-04 11:49:29 ERROR ChannCom:74 - Port name - /dev/ttyS3; Method name - openPort(); Exception type - Permission denied.
+2017-06-04 11:49:31 ERROR DevReal:82 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-04 11:50:05 ERROR ChannCom:74 - Port name - /dev/ttyS6; Method name - openPort(); Exception type - Permission denied.
+2017-06-04 11:50:05 ERROR ChannCom:74 - Port name - /dev/ttyS3; Method name - openPort(); Exception type - Permission denied.
+2017-06-04 11:50:05 ERROR ChannCom:74 - Port name - /dev/ttyUSB2; Method name - openPort(); Exception type - Port not found.
+2017-06-04 11:50:05 ERROR ChannCom:74 - Port name - /dev/ttyS5; Method name - openPort(); Exception type - Permission denied.
+2017-06-04 12:01:12 ERROR ChannCom:74 - Port name - /dev/ttyS5; Method name - openPort(); Exception type - Permission denied.
+2017-06-04 12:01:12 ERROR ChannCom:74 - Port name - /dev/ttyS6; Method name - openPort(); Exception type - Permission denied.
+2017-06-04 12:01:12 ERROR ChannCom:74 - Port name - /dev/ttyUSB2; Method name - openPort(); Exception type - Port not found.
+2017-06-04 12:01:12 ERROR ChannCom:74 - Port name - /dev/ttyS3; Method name - openPort(); Exception type - Permission denied.
+2017-06-04 12:04:19 ERROR ChannCom:74 - Port name - /dev/ttyS5; Method name - openPort(); Exception type - Permission denied.
+2017-06-04 12:04:19 ERROR ChannCom:74 - Port name - /dev/ttyS6; Method name - openPort(); Exception type - Permission denied.
+2017-06-04 12:04:19 ERROR ChannCom:74 - Port name - /dev/ttyUSB2; Method name - openPort(); Exception type - Port not found.
+2017-06-04 12:04:19 ERROR ChannCom:74 - Port name - /dev/ttyS3; Method name - openPort(); Exception type - Permission denied.
+2017-06-04 12:04:21 ERROR DevReal:82 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-04 12:12:15 ERROR ChannCom:74 - Port name - /dev/ttyS5; Method name - openPort(); Exception type - Permission denied.
+2017-06-04 12:12:15 ERROR ChannCom:74 - Port name - /dev/ttyS6; Method name - openPort(); Exception type - Permission denied.
+2017-06-04 12:12:15 ERROR ChannCom:74 - Port name - /dev/ttyS3; Method name - openPort(); Exception type - Permission denied.
+2017-06-04 12:12:15 ERROR ChannCom:74 - Port name - /dev/ttyUSB2; Method name - openPort(); Exception type - Port not found.
+2017-06-04 12:12:17 ERROR DevReal:82 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-04 19:41:36 ERROR ChannCom:74 - Port name - /dev/ttyS5; Method name - openPort(); Exception type - Permission denied.
+2017-06-04 19:41:36 ERROR ChannCom:74 - Port name - /dev/ttyS3; Method name - openPort(); Exception type - Permission denied.
+2017-06-04 19:41:36 ERROR ChannCom:74 - Port name - /dev/ttyS6; Method name - openPort(); Exception type - Permission denied.
+2017-06-04 19:41:36 ERROR ChannCom:74 - Port name - /dev/ttyUSB2; Method name - openPort(); Exception type - Port not found.
+2017-06-04 19:41:39 ERROR DevReal:82 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-04 19:41:41 ERROR DevReal:82 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-04 19:41:43 ERROR DevReal:82 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-04 19:41:45 ERROR DevReal:82 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-04 19:42:49 ERROR ChannCom:74 - Port name - /dev/ttyS5; Method name - openPort(); Exception type - Permission denied.
+2017-06-04 19:42:49 ERROR ChannCom:74 - Port name - /dev/ttyUSB2; Method name - openPort(); Exception type - Port not found.
+2017-06-04 19:42:49 ERROR ChannCom:74 - Port name - /dev/ttyS6; Method name - openPort(); Exception type - Permission denied.
+2017-06-04 19:42:49 ERROR ChannCom:74 - Port name - /dev/ttyS3; Method name - openPort(); Exception type - Permission denied.
+2017-06-04 19:42:51 ERROR DevReal:82 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-04 19:42:53 ERROR DevReal:82 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-04 19:42:55 ERROR DevReal:82 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-04 19:45:42 ERROR ChannCom:74 - Port name - /dev/ttyS6; Method name - openPort(); Exception type - Permission denied.
+2017-06-04 19:45:42 ERROR ChannCom:74 - Port name - /dev/ttyS5; Method name - openPort(); Exception type - Permission denied.
+2017-06-04 19:45:42 ERROR ChannCom:74 - Port name - /dev/ttyUSB2; Method name - openPort(); Exception type - Port not found.
+2017-06-04 19:45:42 ERROR ChannCom:74 - Port name - /dev/ttyS3; Method name - openPort(); Exception type - Permission denied.
+2017-06-04 19:45:44 ERROR DevReal:82 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-04 19:45:46 ERROR DevReal:82 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-04 19:45:48 ERROR DevReal:82 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-04 19:45:50 ERROR DevReal:82 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-04 19:49:29 ERROR ChannCom:74 - Port name - /dev/ttyS5; Method name - openPort(); Exception type - Permission denied.
+2017-06-04 19:49:29 ERROR ChannCom:74 - Port name - /dev/ttyS6; Method name - openPort(); Exception type - Permission denied.
+2017-06-04 19:49:29 ERROR ChannCom:74 - Port name - /dev/ttyS3; Method name - openPort(); Exception type - Permission denied.
+2017-06-04 19:49:29 ERROR ChannCom:74 - Port name - /dev/ttyUSB2; Method name - openPort(); Exception type - Port not found.
+2017-06-04 19:49:31 ERROR DevReal:82 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-04 19:49:33 ERROR DevReal:82 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-04 19:50:28 ERROR ChannCom:74 - Port name - /dev/ttyS5; Method name - openPort(); Exception type - Permission denied.
+2017-06-04 19:50:28 ERROR ChannCom:74 - Port name - /dev/ttyUSB2; Method name - openPort(); Exception type - Port not found.
+2017-06-04 19:50:28 ERROR ChannCom:74 - Port name - /dev/ttyS3; Method name - openPort(); Exception type - Permission denied.
+2017-06-04 19:50:28 ERROR ChannCom:74 - Port name - /dev/ttyS6; Method name - openPort(); Exception type - Permission denied.
+2017-06-04 19:50:30 ERROR DevReal:82 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-04 19:51:04 ERROR ChannCom:74 - Port name - /dev/ttyS5; Method name - openPort(); Exception type - Permission denied.
+2017-06-04 19:51:04 ERROR ChannCom:74 - Port name - /dev/ttyUSB2; Method name - openPort(); Exception type - Port not found.
+2017-06-04 19:51:04 ERROR ChannCom:74 - Port name - /dev/ttyS3; Method name - openPort(); Exception type - Permission denied.
+2017-06-04 19:51:04 ERROR ChannCom:74 - Port name - /dev/ttyS6; Method name - openPort(); Exception type - Permission denied.
+2017-06-04 19:52:15 ERROR ChannCom:74 - Port name - /dev/ttyS5; Method name - openPort(); Exception type - Permission denied.
+2017-06-04 19:52:15 ERROR ChannCom:74 - Port name - /dev/ttyUSB2; Method name - openPort(); Exception type - Port not found.
+2017-06-04 19:52:15 ERROR ChannCom:74 - Port name - /dev/ttyS3; Method name - openPort(); Exception type - Permission denied.
+2017-06-04 19:52:15 ERROR ChannCom:74 - Port name - /dev/ttyS6; Method name - openPort(); Exception type - Permission denied.
+2017-06-04 19:52:58 ERROR ChannCom:74 - Port name - /dev/ttyS6; Method name - openPort(); Exception type - Permission denied.
+2017-06-04 19:52:58 ERROR ChannCom:74 - Port name - /dev/ttyUSB2; Method name - openPort(); Exception type - Port not found.
+2017-06-04 19:52:58 ERROR ChannCom:74 - Port name - /dev/ttyS5; Method name - openPort(); Exception type - Permission denied.
+2017-06-04 19:52:58 ERROR ChannCom:74 - Port name - /dev/ttyS3; Method name - openPort(); Exception type - Permission denied.
+2017-06-04 19:57:33 ERROR ChannCom:74 - Port name - /dev/ttyS3; Method name - openPort(); Exception type - Permission denied.
+2017-06-04 19:57:33 ERROR ChannCom:74 - Port name - /dev/ttyUSB2; Method name - openPort(); Exception type - Port not found.
+2017-06-04 19:57:33 ERROR ChannCom:74 - Port name - /dev/ttyS5; Method name - openPort(); Exception type - Permission denied.
+2017-06-04 19:57:33 ERROR ChannCom:74 - Port name - /dev/ttyS6; Method name - openPort(); Exception type - Permission denied.
+2017-06-04 19:57:35 ERROR DevReal:82 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-04 20:06:10 ERROR ChannCom:74 - Port name - /dev/ttyS3; Method name - openPort(); Exception type - Permission denied.
+2017-06-04 20:06:10 ERROR ChannCom:74 - Port name - /dev/ttyUSB2; Method name - openPort(); Exception type - Port not found.
+2017-06-04 20:06:10 ERROR ChannCom:74 - Port name - /dev/ttyS6; Method name - openPort(); Exception type - Permission denied.
+2017-06-04 20:06:10 ERROR ChannCom:74 - Port name - /dev/ttyS5; Method name - openPort(); Exception type - Permission denied.
+2017-06-04 20:06:12 ERROR DevReal:82 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-04 20:06:14 ERROR DevReal:82 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-06 16:23:32 ERROR ChannCom:74 - Port name - /dev/ttyS6; Method name - openPort(); Exception type - Permission denied.
+2017-06-06 16:23:32 ERROR ChannCom:74 - Port name - /dev/ttyS5; Method name - openPort(); Exception type - Permission denied.
+2017-06-06 16:23:32 ERROR ChannCom:74 - Port name - /dev/ttyS3; Method name - openPort(); Exception type - Permission denied.
+2017-06-06 16:23:32 ERROR ChannCom:74 - Port name - /dev/ttyUSB2; Method name - openPort(); Exception type - Port not found.
+2017-06-06 16:23:34 ERROR DevReal:82 - fail to decode pro: sms01.SIM_poll1 message: null
+2017-06-09 15:19:48 ERROR ChannCom:74 - Port name - /dev/ttyS5; Method name - openPort(); Exception type - Permission denied.
+2017-06-09 15:19:48 ERROR ChannCom:74 - Port name - /dev/ttyS6; Method name - openPort(); Exception type - Permission denied.
+2017-06-09 15:19:48 ERROR ChannCom:74 - Port name - /dev/ttyS3; Method name - openPort(); Exception type - Permission denied.
+2017-06-12 16:39:28 ERROR ChannCom:75 - Port name - null; Method name - openPort(); Exception type - Null not permitted.
+2017-06-12 16:39:28 ERROR ChannCom:75 - Port name - /dev/pts/3; Method name - openPort(); Exception type - Port not found.
+2017-06-12 16:40:54 ERROR ChannCom:75 - Port name - /dev/pts/3; Method name - openPort(); Exception type - Port not found.
+2017-06-12 16:40:54 ERROR ChannCom:75 - Port name - null; Method name - openPort(); Exception type - Null not permitted.
+2017-06-12 16:47:51 ERROR ChannCom:75 - Port name - /dev/pts/3; Method name - openPort(); Exception type - Port not found.
+2017-06-12 16:47:51 ERROR ChannCom:75 - Port name - null; Method name - openPort(); Exception type - Null not permitted.
+2017-06-12 17:02:09 ERROR ChannCom:75 - Port name - /dev/pts/3; Method name - openPort(); Exception type - Port not found.
+2017-06-12 17:02:09 ERROR ChannCom:75 - Port name - null; Method name - openPort(); Exception type - Null not permitted.
+2017-06-12 17:34:28 ERROR ChannCom:75 - Port name - /dev/pts/3; Method name - openPort(); Exception type - Port not found.
+2017-06-12 17:34:28 ERROR ChannCom:75 - Port name - null; Method name - openPort(); Exception type - Null not permitted.
+2017-06-12 17:35:42 ERROR ChannCom:75 - Port name - null; Method name - openPort(); Exception type - Null not permitted.
+2017-06-12 17:35:42 ERROR ChannCom:75 - Port name - /dev/pts/3; Method name - openPort(); Exception type - Port not found.
+2017-06-13 14:55:00 ERROR ChannCom:75 - Port name - null; Method name - openPort(); Exception type - Null not permitted.
+2017-06-13 14:55:00 ERROR ChannCom:75 - Port name - /dev/pts/3; Method name - openPort(); Exception type - Port not found.
+2017-06-20 11:50:21 ERROR ChannCom:75 - Port name - null; Method name - openPort(); Exception type - Null not permitted.
+2017-06-20 11:50:21 ERROR ChannCom:75 - Port name - /dev/pts/3; Method name - openPort(); Exception type - Port not found.
+2017-06-20 11:50:22 ERROR DevReal:78 - fail to decode pro: wsd01.poll1 message: null
+2017-06-20 11:50:22 ERROR DevReal:78 - fail to decode pro: wsd03.poll1 message: null
+2017-06-20 11:50:23 ERROR DevReal:78 - fail to decode pro: wsd02.poll1 message: null
+2017-06-20 11:50:23 ERROR DevReal:78 - fail to decode pro: wsd03.poll1 message: null
+2017-06-20 11:50:24 ERROR DevReal:78 - fail to decode pro: wsd03.poll1 message: null
+2017-06-20 11:51:52 ERROR ChannCom:75 - Port name - /dev/pts/3; Method name - openPort(); Exception type - Port not found.
+2017-06-20 11:51:52 ERROR ChannCom:75 - Port name - null; Method name - openPort(); Exception type - Null not permitted.
+2017-06-20 11:51:53 ERROR DevReal:78 - fail to decode pro: wsd03.poll1 message: null
+2017-06-20 11:51:53 ERROR DevReal:78 - fail to decode pro: wsd01.poll1 message: null
+2017-06-20 11:51:54 ERROR DevReal:78 - fail to decode pro: wsd03.poll1 message: null
+2017-06-20 11:51:54 ERROR DevReal:78 - fail to decode pro: wsd02.poll1 message: null
+2017-06-20 11:53:28 ERROR ChannCom:75 - Port name - null; Method name - openPort(); Exception type - Null not permitted.
+2017-06-20 11:53:28 ERROR ChannCom:75 - Port name - /dev/pts/3; Method name - openPort(); Exception type - Port not found.
+2017-06-20 11:53:29 ERROR DevReal:78 - fail to decode pro: wsd03.poll1 message: null
+2017-06-20 11:53:29 ERROR DevReal:78 - fail to decode pro: wsd01.poll1 message: null

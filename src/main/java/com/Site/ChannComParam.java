@@ -8,7 +8,9 @@ public class ChannComParam extends AbstractChannParam {
 	private int parity;
 	private int dataBits;
 	private int stopBits;
+	private long delayToCheckComingData;
 	
+
 	public ChannComParam() {
 		super();		
 	}
@@ -25,8 +27,13 @@ public class ChannComParam extends AbstractChannParam {
 		this.parity = parity;
 		this.dataBits = dataBits;
 		this.stopBits = stopBits;
+		
+		calDelayToCheckComingData();
 	}
 
+	private long calDelayToCheckComingData() {
+		return 10;
+	}
 	@Override
 	public String toString() {
 		return "ChannComParam [port=" + portName + ", baudRate=" + baudRate + ", parity=" + parity + ", dataBits="
@@ -81,5 +88,9 @@ public class ChannComParam extends AbstractChannParam {
 
 	public void setParity(int parity) {
 		this.parity = parity;
+	}
+	
+	protected long getDelayToCheckComingData() {
+		return delayToCheckComingData;
 	}
 }

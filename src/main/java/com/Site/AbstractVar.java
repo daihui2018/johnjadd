@@ -1,11 +1,13 @@
 package com.Site;
 
+import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
 import java.util.Date;
 
 public abstract class AbstractVar {
 	private String id;
 	private String name;
+	private AbstractDev dev;
 	protected ArrayList<AbstractAlarmJudger> judgers = new ArrayList<AbstractAlarmJudger>();
 	protected transient ArrayList<AbstractVar> children = new ArrayList<AbstractVar>();
 	
@@ -15,19 +17,22 @@ public abstract class AbstractVar {
 	
 	public abstract void setValue(double value);
 	public abstract void setValue(boolean value);	
-	public abstract void setValue(String value);	
+	public abstract void setValue(String value);
 	
+	public abstract boolean isValueChanged();
+	
+	private Date valueUpdatedTime;
 	private Date valueChangedTime;
 	//private boolean valueChanged;
 	//private boolean available;
-	
 	private AbstractCalMethod childrenCalMethod;
 	public abstract void calValueFromChildren();
 	public abstract boolean isCalMethodMatch(AbstractCalMethod cm);
 	
 	public abstract boolean isJudgerMatch(AbstractAlarmJudger aj);
 	public abstract void walkJudger();
-		
+	
+	
 	public AbstractVar() {
 		this("newID", "newVar");
 	}	
@@ -35,6 +40,8 @@ public abstract class AbstractVar {
 		super();
 		this.setId(id);
 		this.setName(name);
+		this.setValueUpdatedTime(new Date());
+		this.setValueChangedTime(new Date());	
 	}
 	public void addChild(AbstractVar var) {
 		if(var!=null) {
@@ -54,6 +61,14 @@ public abstract class AbstractVar {
 			judgers.add(aj);
 	}
 	
+	public String getFullId() {
+		String fid = this.id;
+				
+		if(this.dev!=null) {
+			fid = this.dev.getId() + "_" + fid;
+		}
+		return fid;
+	}
 	public String getId() {
 		return id;
 	}
@@ -77,6 +92,25 @@ public abstract class AbstractVar {
 	}
 	protected void setValueChangedTime(Date valueChangedTime) {
 		this.valueChangedTime = valueChangedTime;
+	}
+	public Date getValueUpdatedTime() {
+		return valueUpdatedTime;
+	}
+	public void setValueUpdatedTime(Date valueUpdatedTime) {
+		this.valueUpdatedTime = valueUpdatedTime;
+		
+		try {
+			DataSender.sendDevByPut(this);
+		} catch (UnsupportedEncodingException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+	public AbstractDev getDev() {
+		return dev;
+	}
+	public void setDev(AbstractDev dev) {
+		this.dev = dev;
 	}
 	@Override
 	public String toString() {

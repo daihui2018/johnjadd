@@ -1,5 +1,6 @@
 package com.Site;
 
+import java.io.UnsupportedEncodingException;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -8,7 +9,8 @@ public abstract class AbstractDev {
 	private String name = "newDev";
 	private Map<String, AbstractVar> vars= new HashMap<String, AbstractVar>();
 	private int refreshInterval = 1000;
-	
+	private String param;	//ip or addr as serial dev or some other data of dev
+
 	public abstract void createVars();
 	
 	public void init() {
@@ -18,12 +20,19 @@ public abstract class AbstractDev {
 		for (AbstractVar var : vars.values()) {
 			 var.walkJudger();
 		}
-		System.out.println("[" + this.getId() + "] is refreshed!");
+		//System.out.println("[" + this.getId() + "] is refreshed!");
+		/*try {
+			DataSender.sendDevByGET(this);
+		} catch (UnsupportedEncodingException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}*/
 	}	
 	public void addVar(AbstractVar var) {
 		if(var!=null) {
 			if(!vars.containsKey(var.getId())) {
 				vars.put(var.getId(), var);
+				var.setDev(this);
 			}
 		}
 	}
@@ -78,6 +87,13 @@ public abstract class AbstractDev {
 		this.refreshInterval = refreshInterval;
 	}
 
+	public String getParam() {
+		return param;
+	}
+
+	public void setParam(String param) {
+		this.param = param;
+	}
 	@Override
 	public String toString() {
 		return "Dev [id=" + id + ", name=" + name + ", vars=" + vars  + "]";

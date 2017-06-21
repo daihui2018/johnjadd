@@ -7,8 +7,11 @@ public class ChannThread implements Runnable {
 	static private boolean stop;
 	
 	public void run(){
+		System.out.println("chanthread start to run");
 		if(getChann()!=null) {
+			System.out.println("chan in chanthread is " + getChann());
 			getChann().open();
+			System.out.println("chan in chanthread is opened");
 		}
 		
 		while(!stop) {	

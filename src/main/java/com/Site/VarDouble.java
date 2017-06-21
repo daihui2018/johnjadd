@@ -4,10 +4,18 @@ import java.util.Date;
 
 public class VarDouble extends AbstractVar {
 	private double val;
+	private double lastVal;
+	private double filterVal;
 	
 	public VarDouble() {
-		super();
+		this("newVarDou", "newVarDou");
 	}
+	public VarDouble(String id, String name) {
+		super(id, name);
+		val = 0;
+		lastVal = 0;
+		filterVal = 1;
+	}	
 	@Override
 	public double getDouValue() {
 		return val;
@@ -29,7 +37,11 @@ public class VarDouble extends AbstractVar {
 	@Override
 	public void setValue(double value) {
 		this.val = value;
-		this.setValueChangedTime(new Date());
+		this.setValueUpdatedTime(new Date());
+		if(isValueChanged()==true) {
+			this.setValueChangedTime(new Date());
+			this.lastVal = this.val;			
+		}
 	}
 	@Override
 	public void setValue(boolean value) {
@@ -38,10 +50,7 @@ public class VarDouble extends AbstractVar {
 		}else {
 			setValue(1f);
 		}		
-	}
-	public VarDouble(String id, String name) {
-		super(id, name);
-	}
+	}	
 	@Override
 	public String getValue() {		
 		return String.valueOf(val);
@@ -69,6 +78,22 @@ public class VarDouble extends AbstractVar {
 		}
 	
 		this.val = this.getChildrenCalMethod().commit(vals);		
+	}	
+	@Override
+	public boolean isValueChanged() {
+		return (Math.abs(this.lastVal-this.val)>this.filterVal);
+	}
+	public double getLastVal() {
+		return lastVal;
+	}
+	public void setLastVal(double lastVal) {
+		this.lastVal = lastVal;
+	}
+	public double getFilterVal() {
+		return filterVal;
+	}
+	public void setFilterVal(double filterVal) {
+		this.filterVal = Math.abs(filterVal);
 	}
 	@Override
 	public boolean isCalMethodMatch(AbstractCalMethod cm) {

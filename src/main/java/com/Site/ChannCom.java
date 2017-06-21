@@ -1,5 +1,6 @@
 package com.Site;
 
+import java.util.ArrayList;
 import jssc.SerialPort;
 import jssc.SerialPortException;
 
@@ -8,6 +9,9 @@ public class ChannCom extends AbstractChann {
 	
 	private SerialPort sp = null;
 	private ChannComParam comParam = null;
+	
+	//running param
+	private long delayToCheckComingData = 10;
 	
 	public ChannCom(ChannComParam param) {
 		setParam(param);
@@ -35,6 +39,16 @@ public class ChannCom extends AbstractChann {
 				e.printStackTrace();
 			}
 		}
+		
+		setDelayToCheckComingData(comParam.getDelayToCheckComingData());
+	}
+
+	protected long getDelayToCheckComingData() {
+		return delayToCheckComingData;
+	}
+
+	protected void setDelayToCheckComingData(long delayToCheckComingData) {
+		this.delayToCheckComingData = delayToCheckComingData;
 	}
 
 	@Override
@@ -43,6 +57,7 @@ public class ChannCom extends AbstractChann {
 			return false;
 		}
 		
+		System.out.println("channel is trying to open: " + comParam );
 		if(isOpened()) {
 			try {
 				sp.closePort();
@@ -51,9 +66,9 @@ public class ChannCom extends AbstractChann {
 			}
 		}
 		sp = null;
-		
-		sp = new SerialPort(comParam.getPortName());//("/dev/pts/3");
-		
+		System.out.println("try to create port name = " + comParam.getPortName());
+		sp = new SerialPort(comParam.getPortName());
+		System.out.println("port = " + comParam.getPortName() + "created!");
 		try {
 			sp.openPort();
 		} catch (SerialPortException e) {
@@ -88,21 +103,38 @@ public class ChannCom extends AbstractChann {
 				e.printStackTrace();
 			}
 		}
-		//System.out.println(getParam().getName() + " write: " + data);
 	}
 
 	@Override
-	public byte[] read() {
+	public byte[] read() {	
+		byte[] ret = null;
+		ArrayList<Byte> bydata = new ArrayList<Byte>();
 		if(isOpened()) {
 			try {
-				return sp.readBytes();
+				//return sp.readBytes();
+				byte[] bybuf = null;
+				while((bybuf = sp.readBytes())!=null) {
+					for(byte by : bybuf) {
+						bydata.add(by);
+					}					
+					Thread.sleep(getDelayToCheckComingData());					
+				}
+				
+				int datalen = bydata.size();
+				if(datalen>0) {
+					ret = new byte[bydata.size()];
+					for (int index=0; index<ret.length; index++) {
+						ret[index] = bydata.get(index);
+					}
+				}				
 			} catch (SerialPortException e) {
 				e.printStackTrace();
 				return null;
+			}catch (InterruptedException e) {
+				e.printStackTrace();
 			}
 		}
-		return null;
-		//System.out.println(getParam().getName() + "is reading");
+		return ret;
 	}
 
 	public boolean isOpened() {

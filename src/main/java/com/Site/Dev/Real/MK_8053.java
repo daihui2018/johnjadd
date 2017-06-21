@@ -3,8 +3,7 @@ package com.Site.Dev.Real;
 import com.Site.AbstractVar;
 import com.Site.DevReal;
 import com.Site.Protocal;
-import com.Site.VarBoolean;
-import com.Site.Math;;
+import com.Site.MyMath;;
 
 public class MK_8053 extends DevReal {
 
@@ -19,7 +18,7 @@ public class MK_8053 extends DevReal {
 				chrs[index] = (char) recv[index+1];
 			}
 			
-			int data = Math.atoi(chrs);
+			int data = MyMath.atoi(chrs);
 			for(int index=0; index<16; index++){
 				AbstractVar var = this.getVar("DI" + index);
 				if(var==null) continue;
@@ -30,37 +29,22 @@ public class MK_8053 extends DevReal {
 					var.setValue(false);
 				}
 				
-				System.out.println(var.getName() + "=" + var.getValue());
+				//System.out.println("dev[" + this.getId() + "]'s " + var.getName() + "=" + var.getValue());
 			}
 		}
 	}
 	
 	@Override
-	public void createVars() {
-		addVar(new VarBoolean("DI0", "DI00 closed"));
-		addVar(new VarBoolean("DI1", "DI01 closed"));
-		addVar(new VarBoolean("DI2", "DI02 closed"));
-		addVar(new VarBoolean("DI3", "DI03 closed"));
-		addVar(new VarBoolean("DI4", "DI04 closed"));
-		addVar(new VarBoolean("DI5", "DI05 closed"));
-		addVar(new VarBoolean("DI6", "DI06 closed"));
-		addVar(new VarBoolean("DI7", "DI07 closed"));
-		addVar(new VarBoolean("DI8", "DI08 closed"));
-		addVar(new VarBoolean("DI9", "DI09 closed"));
-		addVar(new VarBoolean("DI10", "DI10 closed"));
-		addVar(new VarBoolean("DI11", "DI11 closed"));
-		addVar(new VarBoolean("DI12", "DI12 closed"));
-		addVar(new VarBoolean("DI13", "DI13 closed"));
-		addVar(new VarBoolean("DI14", "DI14 closed"));
-		addVar(new VarBoolean("DI15", "DI15 closed"));		
-	}
-
-	@Override
 	public void createPros() {
 		setDataFormat("ASCII");
 		setDataEnd("cr");
 		
-		addPro("8053_poll1", "$016");
+		String data = "$016";
+		int addr = Integer.parseInt(this.getParam().trim());
+		if((addr>0) && (addr<=255)) {
+			data = "$" + MyMath.byte2Hex((byte)addr) + "6";
+			addPro("8053_poll1", data);
+		}
 	}
 	
 	public String createOrds(String id, String param) {
@@ -69,5 +53,4 @@ public class MK_8053 extends DevReal {
 		return ord;
 		
 	}
-
 }

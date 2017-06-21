@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public abstract class DevVirtual extends AbstractDev {
 	private ArrayList<DevVirtual> children = new ArrayList<DevVirtual>();
-	public abstract void createVars();
+	//public abstract void createVars();
 		
 	public DevVirtual() {
 		super();

@@ -1,6 +1,7 @@
 package com.Site;
 
 import java.util.ArrayList;
+import java.util.Date;
 
 public abstract class DevReal extends AbstractDev {	
 	private static final org.apache.log4j.Logger logger = org.apache.log4j.Logger.getLogger(DevReal.class);
@@ -13,10 +14,11 @@ public abstract class DevReal extends AbstractDev {
 	
 	private String dataFormat = "ASCII";
 	private String dataEnd = "cr";
+	private boolean superFastMode = false;
 	
 	public abstract void decode(Protocal pro);// throws Exception;
 	
-	public abstract void createVars();
+	public void createVars() {};
 	public abstract void createPros();
 	public String createOrds(String id, String param){return null;};
 	public DevReal() {
@@ -39,25 +41,35 @@ public abstract class DevReal extends AbstractDev {
 	}
 	@Override
 	public void refresh() {
+		Date startTime = new Date();
 		for (Protocal pro : pros) {
 			commitOrd();
 			commitPro(pro);
 		}
 		super.refresh();
+		
+		if(superFastMode==false) {
+			Date now = new Date();
+			long consumedTime = now.getTime()-startTime.getTime();
+			long leftTime = this.getRefreshInterval()-consumedTime;
+			if(leftTime > 0) {
+				try {
+					Thread.sleep(leftTime);
+				} catch (InterruptedException e) {
+					e.printStackTrace();
+				}
+			}
+		}
 	}
 	
 	private void commitPro(Protocal pro) {
 		if(pro==null) return;
 		
 		poll(pro);
-		try {
-			Thread.sleep(getRefreshInterval());
-		} catch (InterruptedException e) {
-			e.printStackTrace();
-		}
+
 		fill(pro);
 		
-		System.out.println("[" + this.getId() + "] pro =" + pro);
+		//System.out.println("[" + this.getId() + "] pro =" + pro);
 		
 		try {
 			logger.debug("Start to decode pro: " + pro.getId());
@@ -91,15 +103,30 @@ public abstract class DevReal extends AbstractDev {
 		AbstractChann chann = getChann();
 		if(chann==null) return;
 		if(pro==null) return;
-		byte[] data = pro.getSendData();
 		chann.setParam(getChannParam());
+		byte[] data = pro.getSendData();
 		chann.write(data);;
 	}
 	private void fill(Protocal pro) {
 		AbstractChann chann = getChann();
 		if(chann==null) return;
 		if(pro==null) return;
-		pro.setRecvData(chann.read());
+		//pro.setRecvData(chann.read());
+		
+		int index = getRefreshInterval()/20;
+		byte[] bydata = null;
+		while(index>0) {
+			index--;
+			try {
+				Thread.sleep(20);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+			if((bydata = chann.read())!=null ) {
+				break;
+			}
+		}
+		pro.setRecvData(bydata);
 	}
 	private ProtocalOrd getReadyOrd() {
 		for(ProtocalOrd ord : ords) {
@@ -116,6 +143,9 @@ public abstract class DevReal extends AbstractDev {
 			pros.add(pro);
 	}
 	public void addPro(String id, String sendData) {
+		addPro(new Protocal(this, id, sendData));
+	}
+	public void addPro(String id, byte[] sendData) {
 		addPro(new Protocal(this, id, sendData));
 	}
 	public ArrayList<Protocal> getPros() {
@@ -169,5 +199,13 @@ public abstract class DevReal extends AbstractDev {
 	}
 	public void setDataEnd(String dataEnd) {
 		this.dataEnd = dataEnd;		
+	}
+
+	protected boolean isSuperFastMode() {
+		return superFastMode;
+	}
+
+	protected void setSuperFastMode(boolean superFastMode) {
+		this.superFastMode = superFastMode;
 	}
 }

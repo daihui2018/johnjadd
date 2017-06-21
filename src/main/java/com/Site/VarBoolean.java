@@ -4,12 +4,15 @@ import java.util.Date;
 
 public class VarBoolean extends AbstractVar {
     private boolean val;
+    private boolean lastVal;
 	
 	public VarBoolean() {
-		super();
+		this("newVarB", "newVarB");
 	}
 	public VarBoolean(String id, String name) {
 		super(id, name);
+		this.val = false;
+		this.lastVal = false;
 	}
 	@Override
 	public boolean getBoolValue() {
@@ -28,6 +31,16 @@ public class VarBoolean extends AbstractVar {
 		return String.valueOf(val);
 	}
 	@Override
+	public void setValue(boolean value) {
+		this.val = value;
+		this.setValueUpdatedTime(new Date());
+
+		if(isValueChanged()==true) {
+			this.setValueChangedTime(new Date());
+			this.lastVal = this.val;
+		}		
+	}
+	@Override
 	public void setValue(String value) {
 		value = value.trim();
 		try {
@@ -35,12 +48,7 @@ public class VarBoolean extends AbstractVar {
 		}catch(NumberFormatException e) {
 			setValue(Boolean.valueOf(value));
 		}
-	}
-	@Override
-	public void setValue(boolean value) {
-		this.val = value;
-		this.setValueChangedTime(new Date());
-	}
+	}	
 	@Override
 	public void setValue(double value) {
 		if(value==0) {
@@ -55,12 +63,6 @@ public class VarBoolean extends AbstractVar {
 			aj.judge(val);
 		}
 	}
-	/*@Override
-	public void addChild(AbstractVar var) {
-		if(var instanceof VarBoolean) {
-			children.add((VarBoolean) var);
-		}
-	}*/
 	@Override
 	public void calValueFromChildren() {
 		if(this.getChildrenCalMethod()==null) return;
@@ -81,7 +83,8 @@ public class VarBoolean extends AbstractVar {
 	public boolean isJudgerMatch(AbstractAlarmJudger aj) {
 		return (aj instanceof InterfaceBoolMarker);
 	}
-	
-	
-	
+	@Override
+	public boolean isValueChanged() {
+		return (lastVal == val);
+	}
 }

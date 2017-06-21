@@ -18,6 +18,10 @@ public class Protocal {
 		this(dev, id);
 		setSendData(sendData);
 	}
+	public Protocal(DevReal dev, String id, byte[] sendData) {
+		this(dev, id);
+		setSendData(sendData);
+	}
 	public byte[] getSendData() {
 		return sendData;
 	}
@@ -37,14 +41,14 @@ public class Protocal {
 			strData = strData + (char)0x0A + (char)0x0D;
 		}
 		
-		ArrayList<Byte> data = Math.str2Bytes(strData, dataFormat);
+		ArrayList<Byte> data = MyMath.str2Bytes(strData, dataFormat);
 		sendData = new byte[data.size()];
 		for(int i=0; i<data.size(); i++) {
 			sendData[i] = data.get(i);
 		}
 	}
 	public String getRecvData(String dataFormat) {
-		return Math.bytes2Str(recvData, dataFormat);
+		return MyMath.bytes2Str(recvData, dataFormat);
 	}
 	public void setRecvData(byte[] data) {
 		recvData = null;	//这里会内存泄漏吗？
